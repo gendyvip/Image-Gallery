@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flex-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: "FontAwesome";
+    color: rgb(68, 68, 56);
+}
+
+.myImg {
+    margin: 10px 10px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.img-hover {
+    width: 300px;
+    height: 300px;
+    border: rgb(255, 255, 255) 2px solid;
+    box-shadow: 2px 2px 10px rgb(10, 10, 10);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+#show {
+    position: absolute;
+}
+
+#slider-container {
+    background-color: black;
+    opacity: 0.5;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-slider {
+    width: 500px;
+    height: 600px;
+    cursor: auto;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    z-index: 11;
+    border-radius: 1rem;
+}
+
+.cloned-img {
+    width: 500px;
+    height: 600px;
+    cursor: auto;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    z-index: 13;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px #4b4b4b;
+}
+
+#slider-config {
+    display: flex
+}
+
+#next,
+#prev {
+    color: #fdfdfd;
+    position: absolute;
+    z-index: 12;
+    border: none;
+    border-radius: 4px;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#prev {
+    top: calc(50%);
+    left: 25%;
+}
+
+#next {
+    top: calc(50%);
+    right: 25%;
+}
+
+#close {
+    color: #fffefe;
+    position: absolute;
+    z-index: 12;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    top: 6%;
+    right: 50%;
+}
